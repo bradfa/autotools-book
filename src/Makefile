@@ -11,8 +11,8 @@ clean:
 	-rm jupiter
 
 install:
-	install -d $(prefix)/bin
-	install -m 0755 jupiter $(prefix)/bin
+	install -d $(bindir)
+	install -m 0755 jupiter $(bindir)
 
 uninstall:
 	-rm $(prefix)/bin/jupiter
