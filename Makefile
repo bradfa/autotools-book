@@ -5,7 +5,7 @@ distdir = $(tarname)-$(version)
 prefix = /usr/local
 export prefix
 
-all clean check install jupiter:
+all clean check install jupiter uninstall:
 	cd src && $(MAKE) $@
 
 dist: $(distdir).tar.gz
@@ -32,4 +32,4 @@ FORCE:
 	-rm $(distdir).tar.gz >/dev/null 2>&1
 	-rm -rf $(distdir) >/dev/null 2>&1
 
-.PHONY: FORCE all clean check dist distcheck install
+.PHONY: FORCE all clean check dist distcheck install uninstall
