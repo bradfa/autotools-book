@@ -1,3 +1,5 @@
+CFLAGS ?= -g -O0
+
 all: jupiter
 
 check: all
@@ -5,7 +7,7 @@ check: all
 	@echo "*** ALL TESTS PASSED ***"
 
 jupiter: main.c
-	gcc -g -O0 -o $@ main.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -o $@ main.c
 
 clean:
 	-rm jupiter
