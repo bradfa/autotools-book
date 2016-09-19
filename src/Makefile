@@ -10,4 +10,8 @@ jupiter: main.c
 clean:
 	-rm jupiter
 
-.PHONY: all clean
+install:
+	install -d $(prefix)/bin
+	install -m 0755 jupiter $(prefix)/bin
+
+.PHONY: all clean install
