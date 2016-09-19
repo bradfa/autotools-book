@@ -1,0 +1,45 @@
+This is the example code from the book "Autotools: A Practitioner's Guide to GNU
+Autoconf, Automake, and Libtool" written by John Calcote and published by No
+Starch Press in 2010.  The code is released under the MIT license as indicated
+by Tyler Ortman of No Starch Press, below.
+
+Implementation of the code into a Git repository in the order presented in the
+book was performed by Andrew Bradford in 2016.
+
+This email indicates that this code can be covered by the MIT license, as the
+example code distribution provided by No Starch Press via their website lacks
+license information:
+
+From: Tyler Ortman <tyler@nostarch.com>
+Date: Fri, 16 Sep 2016 15:00:42 -0700
+Message-ID: <CAM4-B+6Zs3E5bggf7xoHfwSzSfg9RU+ixS1dfMrF4L5OUy5PFA@mail.gmail.com>
+Subject: Re: Autotools Book: Example Code License?
+To: No Starch Press -- Info <info@nostarch.com>, Andrew Bradford <andrew@bradfordembedded.com>
+Content-Type: multipart/alternative; boundary=001a113e826827bf9e053ca719e3
+Status: RO
+X-Status: A
+Content-Length: 9088
+Lines: 229
+
+--001a113e826827bf9e053ca719e3
+Content-Type: text/plain; charset=UTF-8
+
+Hey Andrew,
+
+FLAIM is under the license listed here.
+
+https://sourceforge.net/projects/flaim/?source=directory
+
+
+We heard from John, the author, on the rest--he writes:
+
+For the flaim database code I use as a sample oss project to be converted
+to autotools, just use the license on the sourceforge site for flaim. MIT
+is fine for everything else in the book.
+
+
+Hope that puts you at ease about redistribution/modification! Cheers,
+
+Tyler Ortman | editor
+No Starch Press | nostarch.com
+415.863.9900 x105
