@@ -11,6 +11,10 @@ prefix = @prefix@
 exec_prefix = @exec_prefix@
 bindir = @bindir@
 
+# VPATH-specific substitution variables
+srcdir = @srcdir@
+VPATH = @srcdir@
+
 all clean check install jupiter uninstall:
 	cd src && $(MAKE) $@
 
@@ -38,11 +42,11 @@ $(distdir).tar.gz: $(distdir)
 
 $(distdir): FORCE
 	mkdir -p $(distdir)/src
-	cp configure.ac $(distdir)
-	cp configure $(distdir)
-	cp Makefile.in $(distdir)
-	cp src/Makefile.in $(distdir)/src
-	cp src/main.c $(distdir)/src
+	cp $(srcdir)/configure.ac $(distdir)
+	cp $(srcdir)/configure $(distdir)
+	cp $(srcdir)/Makefile.in $(distdir)
+	cp $(srcdir)/src/Makefile.in $(distdir)/src
+	cp $(srcdir)/src/main.c $(distdir)/src
 
 FORCE:
 	-rm $(distdir).tar.gz >/dev/null 2>&1

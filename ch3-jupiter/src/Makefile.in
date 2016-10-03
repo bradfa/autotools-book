@@ -11,6 +11,10 @@ prefix = @prefix@
 exec_prefix = @exec_prefix@
 bindir = @bindir@
 
+# VPATH-specific substitution variables
+srcdir = @srcdir@
+VPATH = @srcdir@
+
 CFLAGS ?= -g -O0
 
 all: jupiter
@@ -20,7 +24,7 @@ check: all
 	@echo "*** ALL TESTS PASSED ***"
 
 jupiter: main.c
-	$(CC) $(CPPFLAGS) $(CFLAGS) -o $@ main.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -o $@ $(srcdir)/main.c
 
 clean:
 	-rm jupiter
