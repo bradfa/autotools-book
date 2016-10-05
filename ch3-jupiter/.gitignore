@@ -1,5 +1,4 @@
 *.tar.gz
-src/jupiter
 autom4te.cache/
 config.h
 config.h.in
@@ -8,3 +7,4 @@ config.status
 configure
 install-sh
 Makefile
+src/jupiter
