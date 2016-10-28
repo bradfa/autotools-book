@@ -31,7 +31,7 @@ check: all
 	@echo "*** ALL TESTS PASSED ***"
 
 jupiter: main.c
-	$(CC) -I. -I$(srcdir) -I.. $(CPPFLAGS) $(CFLAGS) -o $@ $(srcdir)/main.c
+	$(CC) -I. -I$(srcdir) -I.. $(CPPFLAGS) $(CFLAGS) -o $@ $(srcdir)/main.c -lpthread
 
 clean:
 	-rm jupiter
