@@ -8,6 +8,9 @@ AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
+_DEBUG_START_
+AC_CHECK_PROG([bash_var], [bash], [yes], [no],, [/usr/sbin/bash])
+_DEBUG_END_
 AC_PROG_INSTALL
 
 # Checks for libraries.
